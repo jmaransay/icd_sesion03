@@ -19,3 +19,5 @@ apt-get update
 # Lo instalamos, junto a otros paquetes necesarios:
 apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
+# incluimos al usuarios vagrant en el grupo docker para evitar el uso de sudo
+usermod -aG docker vagrant
